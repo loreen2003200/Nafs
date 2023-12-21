@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:fillViewport="true"
+        android:background="#FCF9F6"
+        android:contentDescription="null">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".relax">
+
+            <ImageView
+                android:id="@+id/muscles"
+                android:layout_width="364dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="55dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/muscles" />
+
+            <ImageView
+                android:id="@+id/med"
+                android:layout_width="364dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/muscles"
+                app:srcCompat="@drawable/meditation" />
+
+            <ImageView
+                android:id="@+id/vis"
+                android:layout_width="364dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/med"
+                app:srcCompat="@drawable/visualization" />
+
+            <ImageView
+                android:id="@+id/breath"
+                android:layout_width="369dp"
+                android:layout_height="194dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vis"
+                app:srcCompat="@drawable/breathing" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

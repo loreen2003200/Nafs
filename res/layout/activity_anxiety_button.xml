@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FCF9F6"
+        android:backgroundTint="#FCF9F6"
+        tools:context=".anxiety_button">
+
+        <TextView
+            android:id="@+id/anxiety_01"
+            android:layout_width="45dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="180dp"
+            android:fontFamily="@font/amiko"
+            android:text="01"
+            android:background="#FCF9F6"
+            android:backgroundTint="#FCF9F6"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/anxiety1"
+            android:layout_width="371dp"
+            android:layout_height="208dp"
+            android:layout_marginVertical="0.05dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:background="#FCF9F6"
+            android:backgroundTint="#FCF9F6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/anxiety_01"
+            app:srcCompat="@drawable/anxiety1" />
+
+        <TextView
+            android:id="@+id/anxiety_02"
+            android:layout_width="45dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="180dp"
+            android:background="#FCF9F6"
+            android:backgroundTint="#FCF9F6"
+            android:fontFamily="@font/amiko"
+            android:text="02"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/anxiety1" />
+
+        <ImageView
+            android:id="@+id/anxiety2"
+            android:layout_width="371dp"
+            android:layout_height="208dp"
+            android:layout_marginVertical="0.05dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:background="#FCF9F6"
+            android:backgroundTint="#FCF9F6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/anxiety_02"
+            app:srcCompat="@drawable/anxiety2" />
+
+        <TextView
+            android:id="@+id/anxiety_03"
+            android:layout_width="45dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="180dp"
+            android:background="#FCF9F6"
+            android:backgroundTint="#FCF9F6"
+            android:fontFamily="@font/amiko"
+            android:text="03"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/anxiety2" />
+
+        <ImageView
+            android:id="@+id/anxiety3"
+            android:layout_width="371dp"
+            android:layout_height="208dp"
+            android:layout_marginVertical="0.05dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:background="#FCF9F6"
+            android:backgroundTint="#FCF9F6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/anxiety_03"
+            app:srcCompat="@drawable/anxiety3" />
+
+        <TextView
+            android:id="@+id/anxiety_04"
+            android:layout_width="45dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="180dp"
+            android:background="#FCF9F6"
+            android:backgroundTint="#FCF9F6"
+            android:fontFamily="@font/amiko"
+            android:text="04"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/anxiety3" />
+        <ImageView
+            android:id="@+id/anxiety4"
+            android:layout_width="371dp"
+            android:layout_height="208dp"
+            android:layout_marginVertical="0.05dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:background="#FCF9F6"
+            android:backgroundTint="#FCF9F6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/anxiety_04"
+            app:srcCompat="@drawable/anxiety4"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

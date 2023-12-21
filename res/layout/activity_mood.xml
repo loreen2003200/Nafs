@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/mainLayout"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="53dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/app"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/feel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/amiko"
+        android:text="Hey! How are you feeling today?"
+        android:textSize="32dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="230sp"
+        android:orientation="horizontal"
+        >
+
+        <CheckBox
+            android:id="@+id/happy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/image_check_happy"
+            android:fontFamily="@font/gaegu_light"
+            android:padding="8dp"
+            android:text="Happy"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <CheckBox
+            android:id="@+id/confident"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/image_check_confident"
+            android:fontFamily="@font/gaegu_light"
+            android:padding="8dp"
+            android:text="Confident"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <CheckBox
+            android:id="@+id/excited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/image_check_excited"
+            android:fontFamily="@font/gaegu_light"
+            android:padding="8dp"
+            android:text="Excited"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="95sp"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/linear_1"
+        android:layout_alignStart="@+id/linear_1"
+        android:layout_alignEnd="@+id/linear_1"
+        android:layout_alignBottom="@+id/linear_1">
+
+        <CheckBox
+            android:id="@+id/angry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/image_check_angry"
+            android:fontFamily="@font/gaegu_light"
+            android:padding="8dp"
+            android:text="Angry"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <CheckBox
+            android:id="@+id/nervous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/image_check_nervous"
+            android:fontFamily="@font/gaegu_light"
+            android:padding="8dp"
+            android:text="Nervous"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+
+        <CheckBox
+            android:id="@+id/normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/image_check_normal"
+            android:fontFamily="@font/gaegu_light"
+            android:padding="8dp"
+            android:text="Normal"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="95sp"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/linear_2"
+        android:layout_alignStart="@+id/linear_2"
+        android:layout_alignEnd="@+id/linear_2"
+        android:layout_alignBottom="@+id/linear_2">
+
+        <CheckBox
+            android:id="@+id/sad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/image_check_sad"
+            android:fontFamily="@font/gaegu_light"
+            android:padding="8dp"
+            android:text="Sad"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <CheckBox
+            android:id="@+id/grateful"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/image_check_grateful"
+            android:fontFamily="@font/gaegu_light"
+            android:padding="8dp"
+            android:text="Grateful"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <CheckBox
+            android:id="@+id/tired"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/image_check_tired"
+            android:fontFamily="@font/gaegu_light"
+            android:padding="8dp"
+            android:text="Tired"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="95sp"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/linear_3"
+        android:layout_alignStart="@+id/linear_3"
+        android:layout_alignEnd="@+id/linear_3"
+        android:layout_alignBottom="@+id/linear_3">
+
+        <CheckBox
+            android:id="@+id/loved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/image_check_loved"
+            android:fontFamily="@font/gaegu_light"
+            android:padding="8dp"
+            android:text="Loved"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <CheckBox
+            android:id="@+id/anxious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/image_check_anxious"
+            android:fontFamily="@font/gaegu_light"
+            android:padding="8dp"
+            android:text="Anxious"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <CheckBox
+            android:id="@+id/bored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/image_check_bored"
+            android:fontFamily="@font/gaegu_light"
+            android:padding="8dp"
+            android:text="Bored"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="95sp"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/linear_4"
+        android:layout_alignStart="@+id/linear_4"
+        android:layout_alignEnd="@+id/linear_4"
+        android:layout_alignBottom="@+id/linear_4">
+
+        <CheckBox
+            android:id="@+id/pain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/image_check_inpain"
+            android:fontFamily="@font/gaegu_light"
+            android:padding="8dp"
+            android:text="Inpain"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <CheckBox
+            android:id="@+id/confused"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+            android:drawableTop="@drawable/image_check_confused"
+            android:fontFamily="@font/gaegu_light"
+            android:padding="8dp"
+            android:text="Confused"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+        <ImageButton
+            android:id="@+id/custom_button_diary"
+            android:layout_width="110sp"
+            android:layout_height="110sp"
+            android:layout_marginBottom="25dp"
+
+            android:background="@drawable/button_customized"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diary"
+        android:layout_alignTop="@+id/linear_5"
+        android:layout_alignRight="@+id/linear_5"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="33dp"
+        android:textColor="#947885"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        />
+</RelativeLayout>

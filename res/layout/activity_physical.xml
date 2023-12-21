@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true"
+    android:background="#FCF9F6"
+    android:contentDescription="null">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".relax">
+
+        <ImageView
+            android:id="@+id/dance"
+            android:layout_width="364dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="55dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dance" />
+
+        <ImageView
+            android:id="@+id/pilates"
+            android:layout_width="364dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dance"
+            app:srcCompat="@drawable/pilates" />
+
+        <ImageView
+            android:id="@+id/run"
+            android:layout_width="364dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pilates"
+            app:srcCompat="@drawable/running" />
+
+        <ImageView
+            android:id="@+id/boxing"
+            android:layout_width="369dp"
+            android:layout_height="194dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/run"
+            app:srcCompat="@drawable/boxing" />
+
+
+        <ImageView
+            android:id="@+id/link1"
+            android:layout_width="27dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="124dp"
+            app:layout_constraintEnd_toEndOf="@+id/dance"
+            app:layout_constraintTop_toTopOf="@+id/dance"
+            app:srcCompat="@drawable/link" />
+
+        <ImageView
+            android:id="@+id/link2"
+            android:layout_width="27dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="248dp"
+            app:layout_constraintEnd_toEndOf="@+id/pilates"
+            app:layout_constraintTop_toTopOf="@+id/pilates"
+            app:srcCompat="@drawable/link" />
+
+        <ImageView
+            android:id="@+id/link3"
+            android:layout_width="27dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="96dp"
+            app:layout_constraintEnd_toEndOf="@+id/run"
+            app:layout_constraintTop_toTopOf="@+id/run"
+            app:srcCompat="@drawable/link" />
+
+        <ImageView
+            android:id="@+id/link4"
+            android:layout_width="27dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="132dp"
+            app:layout_constraintEnd_toEndOf="@+id/boxing"
+            app:layout_constraintTop_toTopOf="@+id/boxing"
+            app:srcCompat="@drawable/link" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

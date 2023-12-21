@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/diary_background"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/listViewDiary"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/diary_background"
+        android:longClickable="true" />
+
+    <ImageButton
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="5dp"
+        android:padding="16dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/baseline_add_circle_24"/>
+
+</LinearLayout>

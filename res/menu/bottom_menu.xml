@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/quotes_b"
+        android:title="Quotes"
+        android:icon="@drawable/baseline_format_quote_24"
+        app:showAsAction="always">
+    </item>
+
+
+    <item
+        android:id="@+id/fabT"
+        android:title=""
+        android:enabled="false"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/diary_b"
+        android:title="Diary"
+        android:icon="@drawable/round_book_24"
+        app:showAsAction="always" >
+    </item>
+
+    <item
+        android:id="@+id/activities_b"
+        android:title="Activities"
+        android:icon="@drawable/baseline_tips_and_updates_24"
+        app:showAsAction="always">
+    </item>
+
+
+
+</menu>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true"
+    android:background="#FCF9F6"
+    android:contentDescription="null">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FCF9F6"
+        tools:context=".relax">
+
+        <ImageView
+            android:id="@+id/pod"
+            android:layout_width="364dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="52dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.659"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/podcasts" />
+
+        <ImageView
+            android:id="@+id/books"
+            android:layout_width="364dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pod"
+            app:srcCompat="@drawable/books" />
+
+        <ImageView
+            android:id="@+id/movies"
+            android:layout_width="364dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/books"
+            app:srcCompat="@drawable/movies" />
+
+        <ImageView
+            android:id="@+id/music"
+            android:layout_width="369dp"
+            android:layout_height="194dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movies"
+            app:srcCompat="@drawable/music" />
+
+
+        <ImageView
+            android:id="@+id/pod1"
+            android:layout_width="19dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="120dp"
+            android:clickable="false"
+            app:layout_constraintEnd_toEndOf="@+id/pod"
+            app:layout_constraintTop_toTopOf="@+id/pod"
+            app:srcCompat="@drawable/p" />
+
+        <ImageView
+            android:id="@+id/pod2"
+            android:layout_width="19dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="264dp"
+            android:clickable="false"
+            app:layout_constraintEnd_toEndOf="@+id/pod"
+            app:layout_constraintTop_toTopOf="@+id/pod"
+            app:srcCompat="@drawable/p" />
+
+        <ImageView
+            android:id="@+id/pod3"
+            android:layout_width="19dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="140dp"
+            android:clickable="false"
+            app:layout_constraintEnd_toEndOf="@+id/pod"
+            app:layout_constraintTop_toTopOf="@+id/pod"
+            app:srcCompat="@drawable/p" />
+
+        <ImageView
+            android:id="@+id/pause"
+            android:layout_width="53dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="242dp"
+            android:clickable="false"
+            app:layout_constraintEnd_toEndOf="@+id/music"
+            app:layout_constraintTop_toTopOf="@+id/music"
+            app:srcCompat="@drawable/pause" />
+
+        <ImageView
+            android:id="@+id/stop"
+            android:layout_width="53dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="155dp"
+            app:layout_constraintEnd_toEndOf="@+id/music"
+            app:layout_constraintTop_toTopOf="@+id/music"
+            app:srcCompat="@drawable/stop" />
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="53dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="200dp"
+            app:layout_constraintEnd_toEndOf="@+id/music"
+            app:layout_constraintTop_toTopOf="@+id/music"
+            app:srcCompat="@drawable/play" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
