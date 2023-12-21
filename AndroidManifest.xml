@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/nafs_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/nafs_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Nafs"
+        tools:targetApi="31">
+        <activity
+            android:name=".mood"
+            android:exported="false" />
+        <activity
+            android:name=".DiaryActivities"
+            android:exported="false" />
+        <activity
+            android:name=".trial"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePass"
+            android:exported="false" />
+        <activity
+            android:name=".ManageAcc"
+            android:exported="false" />
+        <activity
+            android:name=".About_Us"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterPage"
+            android:exported="false" />
+        <activity
+            android:name=".history"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="true"
+            android:label="Profile"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".anxiety_button"
+            android:exported="false" />
+        <activity
+            android:name=".motivation_button"
+            android:exported="false" />
+        <activity
+            android:name=".poetic_button"
+            android:exported="false" />
+        <activity
+            android:name=".love_button"
+            android:exported="false" />
+        <activity
+            android:name=".physical"
+            android:exported="false" />
+        <activity
+            android:name=".creativity"
+            android:exported="false" />
+        <activity
+            android:name=".relaxation"
+            android:exported="false" />
+        <activity
+            android:name=".resources1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <service
+            android:name=".MyPlayService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
